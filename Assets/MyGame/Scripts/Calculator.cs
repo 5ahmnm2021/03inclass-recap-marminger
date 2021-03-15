@@ -16,8 +16,30 @@ public class Calculator : MonoBehaviour
 
     public void Addition()
     {
-        Zahl1Float = float.Parse(Zahl1.text);
-        Zahl2Float = float.Parse(Zahl2.text);
+        // Try & catch vesucht Try auszuführen bei error führt es catch aus.
+        // In dem Fall wird die Farbe der Box geändert. 
+        
+
+        try
+        {
+            Zahl1Float = float.Parse(Zahl1.text);
+            Zahl1.image.color = new Color32(255, 255, 255, 255);
+        }
+        catch (System.Exception)
+        {
+            Zahl1.image.color = new Color32(255, 0, 0, 255);
+            Zahl1.text = "Zahl versuchen!";
+        }
+        try
+        {
+            Zahl2Float = float.Parse(Zahl2.text);
+            Zahl2.image.color = new Color32(255, 255, 255, 255);
+        }
+        catch (System.Exception)
+        {
+            Zahl2.image.color = new Color32(255, 0, 0, 255);
+            Zahl2.text = "Zahl versuchen!";
+        }
         Ergebnis.text = (Zahl1Float + Zahl2Float).ToString();
 
     }

@@ -20,9 +20,10 @@ Install Unity, open in Unity Hub.
 Nothing yet.
 
 ### Project state: 
-40% (60% scene switches,Button press ...) 
+100% 
 
 ### Limitations: 
+
 
 ### Lessons Learned:
 Revision of Unity/C# Basics. 

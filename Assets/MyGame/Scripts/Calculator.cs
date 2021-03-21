@@ -19,10 +19,8 @@ public class Calculator : MonoBehaviour
 
     public void Addition()
     {
-        // Try & catch vesucht Try auszuführen bei error führt es catch aus.
-        // In dem Fall wird die Farbe der Box geändert. 
-        
 
+        string fehlerText = "Zahl versuchen!";
         try
         {
             Zahl1Float = float.Parse(Zahl1.text);
@@ -33,7 +31,7 @@ public class Calculator : MonoBehaviour
         catch (System.Exception)
         {
             Zahl1.image.color = new Color32(255, 0, 0, 255);
-            Zahl1.text = "Zahl versuchen!";
+            Zahl1.text = fehlerText;
             num1 = false;
         }
 
@@ -43,11 +41,10 @@ public class Calculator : MonoBehaviour
             Zahl2.image.color = new Color32(255, 255, 255, 255);
             num2 = true;
         }
-
         catch (System.Exception)
         {
             Zahl2.image.color = new Color32(255, 0, 0, 255);
-            Zahl2.text = "Zahl versuchen!";
+            Zahl2.text = fehlerText;
             num2 = false;
         }
 
@@ -56,18 +53,9 @@ public class Calculator : MonoBehaviour
         { 
             Ergebnis.text = (Zahl1Float + Zahl2Float).ToString();
         }
-
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        else
+        {
+            Ergebnis.text = "No Result";
+        }
     }
 }

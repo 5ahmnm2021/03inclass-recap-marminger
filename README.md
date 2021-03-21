@@ -5,27 +5,27 @@ MaximaArminger's Project
 Unity Recap 2020/2021
 
 ### Development platform: 
-macOS Big Sur, Visual Studio Mac, Unity 2020.1.5f1
+macOS Catalina 10.15.7, Visual Studio Mac, Unity 2020.1.5f1
 
 ### Target platform: 
 WebGL
 
-### Visuals: 
-Nothing yet.
+### Visuals:
+Nothing
 
-### Necessary setup/execution steps: 
-Install Unity, open in Unity Hub.
+### Necessary setup/execution steps:
+Install Unity 2020.1.5f1, open project folder in Unity Hub. Open in Unity.
 
 ### Third party material: 
-Nothing yet.
+Nothing
 
 ### Project state: 
-100% 
+100% done
 
 ### Limitations: 
-
+None
 
 ### Lessons Learned:
-Revision of Unity/C# Basics. 
+Revision: if, arrays, random, trycatch, code optimization.
 
 Copyright by MaximaArminger :)
